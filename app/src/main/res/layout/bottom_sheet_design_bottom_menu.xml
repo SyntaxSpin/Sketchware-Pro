@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="18dp">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="19dp"
+            android:text="Options"
+            android:gravity="center"
+            android:textAppearance="?attr/textAppearanceTitleLarge" />
+
+        <TextView
+            android:id="@+id/category_build"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="19dp"
+            android:text="Build Options"
+            android:textAppearance="?attr/textAppearanceTitleSmall" />
+        <LinearLayout
+            android:id="@+id/build_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_top"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/rounded_build_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="Build Settings"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/compile_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_middle"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/rounded_error_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="Show last compile error"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/code_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_middle"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/rounded_folder_code_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="Show source code"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/xml_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/rounded_edit_note_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="DirectXML editor"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/category_compiled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="19dp"
+            android:text="Compiled Project Options "
+            android:textAppearance="?attr/textAppearanceTitleSmall" />
+
+
+
+        <LinearLayout
+            android:id="@+id/apk_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_top"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/rounded_signature_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="Show APK signature"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/apkinstall_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/rounded_android_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="Install last built APK"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/clean"
+        android:text="Clean Tempororay Files"
+        android:layout_marginHorizontal="10dp" app:icon="@drawable/rounded_cleaning_services_24"
+        android:layout_gravity="bottom"/>
+    </LinearLayout>
